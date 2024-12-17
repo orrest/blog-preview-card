@@ -1,0 +1,86 @@
+section > p {
+  margin: 0;
+}
+
+section > p + p {
+  margin-block-start: var(--spacing-150);
+}
+
+section {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  inline-size: 384px;
+  block-size: 522px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background: white;
+  padding: var(--spacing-300);
+  box-shadow: var(--spacing-150) var(--spacing-150) 0px 0px black;
+}
+
+section > img {
+  align-self: center;
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 10px;
+  margin-block-end: var(--spacing-300);
+}
+
+p.learning {
+  width: fit-content;
+  padding-inline: var(--spacing-150);
+  padding-block: var(--spacing-50);
+  border-radius: 4px;
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fz-small);
+  background-color: var(--yellow);
+  border-color: transparent;
+}
+
+p.publish {
+  font-weight: var(--fw-medium);
+  font-size: var(--fz-small);
+}
+
+p.title {
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fz-large);
+  width: fit-content;
+}
+
+p.title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+p.brief {
+  font-weight: var(--fw-medium);
+  font-size: var(--fz-medium);
+  color: var(--gray-500);
+}
+
+section > footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: var(--spacing-300);
+}
+
+section > footer > img {
+  max-inline-size: 100%;
+  block-size: auto;
+  margin-inline-end: var(--spacing-150);
+}
+
+section > footer > p {
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fz-medium);
+}
+
+@media (max-width: 476px) {
+  section {
+    inline-size: 70vw;
+    block-size: auto;
+  }
+}
